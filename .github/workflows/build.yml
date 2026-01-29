@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - config/**
+      - zmk_module/**
       - build.yaml
 
 jobs:
