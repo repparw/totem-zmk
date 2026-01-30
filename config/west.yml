@@ -2,10 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: inrumi
+      url-base: https://github.com/inrumi
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
+    - name: zmk-config-totem
+      remote: inrumi
+      revision: chore/moduled-studiod
   self:
     path: config
+

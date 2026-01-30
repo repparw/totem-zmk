@@ -1,0 +1,7 @@
+# West workspace files
+.west/
+build/
+modules/
+zephyr/
+zmk/
+zmk-config-totem/
