@@ -33,7 +33,7 @@ layers:
   - .
   - /
   - ''''
-  - ESC
+  - {t: ESC, s: '`'}
   - {t: SPACE, h: NL}
   - TAB
   - ENTER
