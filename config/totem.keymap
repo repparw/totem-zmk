@@ -23,6 +23,10 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
+&kscan0 {
+    wakeup-source;
+};
+
 /* Homerow mods */
 
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
