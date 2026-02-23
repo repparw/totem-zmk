@@ -1,14 +1,19 @@
 manifest:
+  defaults:
+      revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: inrumi
       url-base: https://github.com/inrumi
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
       import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
     - name: zmk-config-totem
       remote: inrumi
       revision: chore/moduled-studiod
