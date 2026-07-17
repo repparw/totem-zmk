@@ -38,6 +38,11 @@ hold-trigger-key-positions = <TRIGGER_POS>;)
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)
 
+ZMK_TAP_DANCE(caps_dance,
+    tapping-term-ms = <200>;
+    bindings = <&caps_word>, <&kp CAPSLOCK>;
+)
+
 / {
 
     keymap {
@@ -48,7 +53,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)
             bindings = <
             &kp Q        &kp W        &kp E         &kp R         &kp T      &kp Y      &kp U            &kp I         &kp O        &kp P
             &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G      &kp H      &hmr RSHFT J     &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-&caps_word  &kp Z        &kp X        &kp C         &kp V         &kp B      &kp N      &kp M            &kp COMMA     &kp PERIOD   &kp SLASH       &kp SQT
+&caps_dance  &kp Z        &kp X        &kp C         &kp V         &kp B      &kp N      &kp M            &kp COMMA     &kp PERIOD   &kp SLASH       &kp SQT
                                       &gresc        &lt 1 SPACE   &kp TAB    &kp ENTER  &lt 1 BACKSPACE  &lt 2 DELETE
             >;
         };
