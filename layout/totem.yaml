@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
   - {t: ;, h: RGUI}
-  - '&caps_word'
+  - '&caps_dance'
   - Z
   - X
   - C
