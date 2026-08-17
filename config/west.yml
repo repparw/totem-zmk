@@ -1,6 +1,6 @@
 manifest:
   defaults:
-    revision: main
+      revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -19,3 +19,4 @@ manifest:
       revision: chore/moduled-studiod
   self:
     path: config
+
